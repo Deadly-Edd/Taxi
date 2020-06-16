@@ -26,9 +26,9 @@ namespace Taxi.Web.Data
             await _dataContext.Database.EnsureCreatedAsync();
             await CheckRolesAsync();
             var admin = await CheckUserAsync("1010", "Eduardo", "Fuentes", "efuenteszeledon@gmail.com", "350 634 2747", "Calle Luna Calle Sol", UserType.Admin);
-            var driver = await CheckUserAsync("2020", "Eduardo", "Fuentes", "efuenteszeledon@gmail.com", "350 634 2747", "Calle Luna Calle Sol", UserType.Driver);
-            var user1 = await CheckUserAsync("3030", "Eduardo", "Fuentes", "efuenteszeledon@gmail.com", "350 634 2747", "Calle Luna Calle Sol", UserType.User);
-            var user2 = await CheckUserAsync("4040", "Eduardo", "Fuentes", "efuenteszeledon@gmail.com", "350 634 2747", "Calle Luna Calle Sol", UserType.User);
+            var driver = await CheckUserAsync("2020", "Eduardo", "Fuentes", "efuenteszeledon@yahoo.es", "350 634 2747", "Calle Luna Calle Sol", UserType.Driver);
+            var user1 = await CheckUserAsync("3030", "Eduardo", "Fuentes", "efuenteszeledon@yahoo.com", "350 634 2747", "Calle Luna Calle Sol", UserType.User);
+            var user2 = await CheckUserAsync("4040", "Eduardo", "Fuentes", "efuenteszeledon@outlook.com", "350 634 2747", "Calle Luna Calle Sol", UserType.User);
             await CheckTaxisAsync(driver, user1, user2);
         }
 
