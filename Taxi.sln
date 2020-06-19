@@ -7,11 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Taxi.Common", "Taxi.Common\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Taxi.Web", "Taxi.Web\Taxi.Web.csproj", "{93617548-CC66-48BE-AA36-050C0104E2BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taxi.Prism", "Taxi.Prism\Taxi.Prism\Taxi.Prism.csproj", "{63080573-1ED4-4128-B18A-CD3C8A503134}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Taxi.Prism", "Taxi.Prism\Taxi.Prism\Taxi.Prism.csproj", "{63080573-1ED4-4128-B18A-CD3C8A503134}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taxi.Prism.Android", "Taxi.Prism\Taxi.Prism.Android\Taxi.Prism.Android.csproj", "{F89A7556-68A9-4A60-87EE-BEDD5870E29E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taxi.Prism.iOS", "Taxi.Prism\Taxi.Prism.iOS\Taxi.Prism.iOS.csproj", "{1DB4A552-64EC-4865-A7CA-ABB92E55AAB8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taxi.Cross.Android", "Taxi.Cross.Android\Taxi.Cross.Android.csproj", "{5023A917-5C0C-424C-9F98-1E65C4C70F8B}"
 EndProject
@@ -141,26 +139,6 @@ Global
 		{F89A7556-68A9-4A60-87EE-BEDD5870E29E}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{F89A7556-68A9-4A60-87EE-BEDD5870E29E}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{F89A7556-68A9-4A60-87EE-BEDD5870E29E}.Release|iPhoneSimulator.Deploy.0 = Release|Any CPU
-		{1DB4A552-64EC-4865-A7CA-ABB92E55AAB8}.Ad-Hoc|Any CPU.ActiveCfg = Ad-Hoc|iPhone
-		{1DB4A552-64EC-4865-A7CA-ABB92E55AAB8}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
-		{1DB4A552-64EC-4865-A7CA-ABB92E55AAB8}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
-		{1DB4A552-64EC-4865-A7CA-ABB92E55AAB8}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Ad-Hoc|iPhoneSimulator
-		{1DB4A552-64EC-4865-A7CA-ABB92E55AAB8}.Ad-Hoc|iPhoneSimulator.Build.0 = Ad-Hoc|iPhoneSimulator
-		{1DB4A552-64EC-4865-A7CA-ABB92E55AAB8}.AppStore|Any CPU.ActiveCfg = AppStore|iPhone
-		{1DB4A552-64EC-4865-A7CA-ABB92E55AAB8}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
-		{1DB4A552-64EC-4865-A7CA-ABB92E55AAB8}.AppStore|iPhone.Build.0 = AppStore|iPhone
-		{1DB4A552-64EC-4865-A7CA-ABB92E55AAB8}.AppStore|iPhoneSimulator.ActiveCfg = AppStore|iPhoneSimulator
-		{1DB4A552-64EC-4865-A7CA-ABB92E55AAB8}.AppStore|iPhoneSimulator.Build.0 = AppStore|iPhoneSimulator
-		{1DB4A552-64EC-4865-A7CA-ABB92E55AAB8}.Debug|Any CPU.ActiveCfg = Debug|iPhone
-		{1DB4A552-64EC-4865-A7CA-ABB92E55AAB8}.Debug|iPhone.ActiveCfg = Debug|iPhone
-		{1DB4A552-64EC-4865-A7CA-ABB92E55AAB8}.Debug|iPhone.Build.0 = Debug|iPhone
-		{1DB4A552-64EC-4865-A7CA-ABB92E55AAB8}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
-		{1DB4A552-64EC-4865-A7CA-ABB92E55AAB8}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
-		{1DB4A552-64EC-4865-A7CA-ABB92E55AAB8}.Release|Any CPU.ActiveCfg = Release|iPhone
-		{1DB4A552-64EC-4865-A7CA-ABB92E55AAB8}.Release|iPhone.ActiveCfg = Release|iPhone
-		{1DB4A552-64EC-4865-A7CA-ABB92E55AAB8}.Release|iPhone.Build.0 = Release|iPhone
-		{1DB4A552-64EC-4865-A7CA-ABB92E55AAB8}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
-		{1DB4A552-64EC-4865-A7CA-ABB92E55AAB8}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 		{5023A917-5C0C-424C-9F98-1E65C4C70F8B}.Ad-Hoc|Any CPU.ActiveCfg = Release|Any CPU
 		{5023A917-5C0C-424C-9F98-1E65C4C70F8B}.Ad-Hoc|Any CPU.Build.0 = Release|Any CPU
 		{5023A917-5C0C-424C-9F98-1E65C4C70F8B}.Ad-Hoc|Any CPU.Deploy.0 = Release|Any CPU
