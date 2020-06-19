@@ -88,13 +88,13 @@
                 </CollectionView.ItemTemplate>
             </CollectionView>
         </StackLayout>
-        <busyindicator:SfBusyIndicator AnimationType="Gear" 
+        <busyindicator:SfBusyIndicator AnimationType="Cupertino" 
                                        AbsoluteLayout.LayoutBounds=".5,.5,.5,.5"
                 	                   AbsoluteLayout.LayoutFlags="All"
                 	                   BackgroundColor="Silver"
                 	                   HorizontalOptions="Center"
                 	                   TextColor="White"
-                	                   IsVisible="{Binding IsRunning}"
+                                       IsBusy="{Binding IsRunning}"
                 	                   Title="Loading..."
                 	                   VerticalOptions="Center"
                 	                   ViewBoxWidth="80"
