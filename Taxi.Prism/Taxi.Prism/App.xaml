@@ -11,7 +11,7 @@
             <x:String x:Key="UrlAPI">https://taxiweb123.azurewebsites.net/</x:String>
             
             <!-- Colors -->
-            <Color x:Key="ColorBackgroud">#FBFF87</Color>
+            <Color x:Key="ColorBackgroud">#F2E74B</Color>
             <Color x:Key="ColorPrimary">#3D3D3D</Color>
             <Color x:Key="ColorSecondary">#A6ABAB</Color>
             <Color x:Key="ColorDanger">#8D07F6</Color>
