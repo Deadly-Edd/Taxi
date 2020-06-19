@@ -1,19 +1,79 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Taxi.Web.Helpers;
-using Taxi.Web.Models;
 using System.Linq;
 using System.Threading.Tasks;
+using Taxi.Web.Helpers;
+using Taxi.Web.Models;
 
 namespace Taxi.Web.Controllers
 {
     public class AccountController : Controller
     {
         private readonly IUserHelper _userHelper;
+        private readonly IImageHelper _imageHelper;
+        private ICombosHelper _combosHelper;
 
-        public AccountController(IUserHelper userHelper)
+        public AccountController(
+        IUserHelper userHelper,
+        IImageHelper imageHelper,
+        ICombosHelper combosHelper)
+
         {
             _userHelper = userHelper;
+            _imageHelper = imageHelper;
+            _combosHelper = combosHelper;
+
         }
+
+        public IActionResult Register()
+        {
+            AddUserViewModel model = new AddUserViewModel
+            {
+                UserTypes = _combosHelper.GetComboRoles()
+            };
+
+            return View(model);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Register(AddUserViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                string path = string.Empty;
+
+                if (model.PictureFile != null)
+                {
+                    path = await _imageHelper.UploadImageAsync(model.PictureFile, "Users");
+                }
+
+                Data.Entities.UserEntity user = await _userHelper.AddUserAsync(model, path);
+                if (user == null)
+                {
+                    ModelState.AddModelError(string.Empty, "This email is already used.");
+                    model.UserTypes = _combosHelper.GetComboRoles();
+                    return View(model);
+                }
+
+                LoginViewModel loginViewModel = new LoginViewModel
+                {
+                    Password = model.Password,
+                    RememberMe = false,
+                    Username = model.Username
+                };
+
+                Microsoft.AspNetCore.Identity.SignInResult result2 = await _userHelper.LoginAsync(loginViewModel);
+
+                if (result2.Succeeded)
+                {
+                    return RedirectToAction("Index", "Home");
+                }
+            }
+
+            model.UserTypes = _combosHelper.GetComboRoles();
+            return View(model);
+        }
+
 
         public IActionResult Login()
         {
