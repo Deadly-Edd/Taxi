@@ -30,5 +30,8 @@ namespace Taxi.Web.Helpers
 
         Task<IdentityResult> UpdateUserAsync(UserEntity user);
 
+        Task<SignInResult> ValidatePasswordAsync(UserEntity user, string password);
+
+
     }
 }
