@@ -90,7 +90,7 @@ namespace Taxi.Web.Data
                             Qualification = 4.5f,
                             Source = "ITM Fraternidad",
                             Target = "ITM Robledo",
-                            Remarks = "Muy buen servicio",
+                            Remarks = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec nunc est. Vestibulum volutpat mauris ut consectetur mattis. Suspendisse rhoncus interdum est, non iaculis enim euismod sed. Curabitur sit amet odio in dui sodales maximus. Aliquam quis nisl sapien. Fusce lobortis, quam ut consequat bibendum, lorem enim vehicula urna, eget rhoncus dui diam in ante. Fusce rhoncus arcu mauris, nec efficitur quam euismod ac. Donec iaculis ante vel volutpat ornare. Proin ullamcorper euismod odio, sed elementum orci laoreet eget. Cras finibus metus eu sem pretium, eget rhoncus dui interdum. In lobortis orci id diam sagittis, sed congue eros pharetra.",
                             User = user1
                         },
                         new TripEntity
@@ -100,7 +100,7 @@ namespace Taxi.Web.Data
                             Qualification = 4.8f,
                             Source = "ITM Robledo",
                             Target = "ITM Fraternidad",
-                            Remarks = "Conductor muy amable",
+                            Remarks = "Nullam ut nisi auctor, porttitor orci at, faucibus mauris. Mauris faucibus iaculis eros a lacinia. Curabitur auctor ac sapien sit amet ultrices. Ut mattis ante ut dui rhoncus, et tincidunt ipsum mattis. Sed mattis lacinia risus a varius. Aenean vulputate sit amet erat sed eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel risus nisl. Pellentesque hendrerit bibendum diam ac vestibulum. Duis sodales sem velit, consequat dapibus tortor egestas quis. Sed hendrerit sodales odio, ut rutrum ex molestie nec. Quisque suscipit ullamcorper dolor nec mollis. Praesent quis accumsan magna. Nunc malesuada iaculis aliquam.",
                             User = user1
                         }
                     }
