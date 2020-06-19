@@ -6,6 +6,7 @@
              xmlns:rating="clr-namespace:Syncfusion.SfRating.XForms;assembly=Syncfusion.SfRating.XForms"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="Taxi.Prism.Views.TaxiHistoryPage"
+             BackgroundColor="{StaticResource ColorBackgroud}"
              Title="{Binding Title}">
 
     <AbsoluteLayout>
@@ -19,21 +20,17 @@
                    Placeholder="Enter plaque..." 
                    Text="{Binding Plaque}"
                    VerticalOptions="Center"/>
-                <Button BackgroundColor="Navy"
-                    Command="{Binding CheckPlaqueCommand}"
-                    CornerRadius="20"
-                    HeightRequest="40"
-                    Margin="10,0"
-                    Text="Check Plaque"
-                    TextColor="White"/>
+                <Button Command="{Binding CheckPlaqueCommand}"                   
+                        Margin="10,0"
+                        Text="Check Plaque"/>
             </StackLayout>
-            <rating:SfRating HorizontalOptions="Center"
+            <rating:SfRating HorizontalOptions="CenterAndExpand"
                              IsEnabled="False"
-                             Margin="0,5"
+                             Margin="0,4"
                              Precision="Exact"
                              Value="{Binding Taxi.Qualification}" />
             <Label FontAttributes="Bold" 
-                   FontSize="Large"
+                   FontSize="Medium"
                    HorizontalOptions="Center"
                    Text="{Binding Taxi.Qualification, StringFormat='Qualification: {0:N2}'}"/>
             <StackLayout Orientation="Horizontal">
@@ -94,16 +91,16 @@
                 </CollectionView.ItemTemplate>
             </CollectionView>
         </StackLayout>
-        <busyindicator:SfBusyIndicator AnimationType="Cupertino" 
-                                       AbsoluteLayout.LayoutBounds=".5,.5,.5,.5"
-                	                   AbsoluteLayout.LayoutFlags="All"
-                	                   BackgroundColor="Silver"
-                	                   HorizontalOptions="Center"
-                	                   TextColor="White"
-                                       IsBusy="{Binding IsRunning}"
-                	                   Title="Loading..."
-                	                   VerticalOptions="Center"
-                	                   ViewBoxWidth="80"
-                	                   ViewBoxHeight="80" />
+        <busyindicator:SfBusyIndicator AnimationType="Gear" 
+                                    AbsoluteLayout.LayoutBounds=".5,.5,.5,.5"
+                	                AbsoluteLayout.LayoutFlags="All"
+                	                BackgroundColor="{StaticResource ColorDanger}"
+                	                HorizontalOptions="Center"
+                	                TextColor="{StaticResource ColorFontInverse}"
+                	                IsBusy="{Binding IsRunning}"
+                	                Title="Loading"
+                	                VerticalOptions="Center"
+                	                ViewBoxWidth="80"
+                	                ViewBoxHeight="80" />
     </AbsoluteLayout>
 </ContentPage>
