@@ -30,6 +30,7 @@ namespace Taxi.Prism
             containerRegistry.Register<IGeolocatorService, GeolocatorService>();
             containerRegistry.Register<IRegexHelper, RegexHelper>();
             containerRegistry.Register<IApiService, ApiService>();
+            containerRegistry.Register<IFilesHelper, FilesHelper>();
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<HomePage, HomePageViewModel>();
             containerRegistry.RegisterForNavigation<TaxiMasterDetailPage, TaxiMasterDetailPageViewModel>();
