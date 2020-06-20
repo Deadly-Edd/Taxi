@@ -3,22 +3,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="http://prismlibrary.com"
              x:Class="Taxi.Prism.App">
-  <Application.Resources>
+    <Application.Resources>
 
         <ResourceDictionary>
 
             <!-- Parameters -->
             <x:String x:Key="UrlAPI">https://taxiweb123.azurewebsites.net/</x:String>
             <x:String x:Key="UrlNoImage">https://TaxiWeb123.azurewebsites.net/images/noimage.jpg</x:String>
-            
+
             <!-- Colors -->
-            <Color x:Key="ColorBackgroud">#F2E74B</Color>
-            <Color x:Key="ColorPrimary">#3D3D3D</Color>
-            <Color x:Key="ColorSecondary">#A6ABAB</Color>
-            <Color x:Key="ColorDanger">#8D07F6</Color>
-            <Color x:Key="ColorAccent">#0029FA</Color>
-            <Color x:Key="ColorFont">#3D3D3D</Color>
-            <Color x:Key="ColorFontInverse">#FFFFFF</Color>
+            <Color x:Key="ColorBackgroud">#FFD428</Color>
+            <Color x:Key="ColorPrimary">#FFD428</Color>
+            <Color x:Key="ColorSecondary">#FF8900</Color>
+            <Color x:Key="ColorDanger">#242A37</Color>
+            <Color x:Key="ColorAccent">#242A37</Color>
+            <Color x:Key="ColorFont">#242A37</Color>
+            <Color x:Key="ColorFontInverse">#FFD428</Color>
 
             <!-- Styles -->
             <Style TargetType="Button">
