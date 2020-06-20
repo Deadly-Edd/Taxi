@@ -27,7 +27,7 @@ namespace Taxi.Common.Models
         public string FullNameWithDocument => $"{FirstName} {LastName} - {Document}";
 
         public string PictureFullPath => string.IsNullOrEmpty(PicturePath)
-            ? "https://TaxiWeb123.azurewebsites.net//images/noimage.png"
+            ? "https://TaxiWeb123.azurewebsites.net//images/noimage.jpg"
             : $"https://TaxiWeb123.azurewebsites.net{PicturePath.Substring(1)}";
 
     }
