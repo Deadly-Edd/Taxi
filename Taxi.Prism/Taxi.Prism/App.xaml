@@ -43,7 +43,7 @@
             <Style x:Key="DangerButton" TargetType="Button">
                 <Setter Property="BackgroundColor" Value="{StaticResource ColorDanger}" />
             </Style>
-
+          
             <Style TargetType="Picker">
                 <Setter Property="BackgroundColor" Value="{StaticResource ColorFontInverse}" />
             </Style>

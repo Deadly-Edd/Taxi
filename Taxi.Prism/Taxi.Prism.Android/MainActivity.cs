@@ -30,7 +30,7 @@ namespace Taxi.Prism.Droid
             FFImageLoading.Forms.Platform.CachedImageRenderer.Init(true);
             new SfBusyIndicatorRenderer();
             new SfRatingRenderer();
-            Xamarin.FormsMaps.Init(this, bundle);
+            Xamarin.FormsMaps.Init(this, bundle);           
             LoadApplication(new App(new AndroidInitializer()));
         }
 
