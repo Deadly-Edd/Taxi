@@ -36,6 +36,10 @@
                 <Setter Property="BackgroundColor" Value="{StaticResource ColorFontInverse}" />
             </Style>
 
+            <Style TargetType="Editor">
+                <Setter Property="BackgroundColor" Value="{StaticResource ColorFontInverse}" />
+            </Style>
+
             <Style x:Key="SecondaryButton" TargetType="Button">
                 <Setter Property="BackgroundColor" Value="{StaticResource ColorSecondary}" />
             </Style>
