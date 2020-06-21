@@ -10,12 +10,31 @@ namespace Taxi.Prism.Views
     public partial class StartTripPage : ContentPage
     {
         private readonly IGeolocatorService _geolocatorService;
+        private static StartTripPage _instance;
 
         public StartTripPage(IGeolocatorService geolocatorService)
         {
             InitializeComponent();
             _geolocatorService = geolocatorService;
+            _instance = this;
         }
+
+        public static StartTripPage GetInstance()
+        {
+            return _instance;
+        }
+
+        public void AddPin(Position position, string address, string label, PinType pinType)
+        {
+            MyMap.Pins.Add(new Pin
+            {
+                Address = address,
+                Label = label,
+                Position = position,
+                Type = pinType
+            });
+        }
+
         protected override void OnAppearing()
         {
             base.OnAppearing();
