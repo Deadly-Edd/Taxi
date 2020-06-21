@@ -907,6 +907,15 @@ namespace Taxi.Prism.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Target.
+        /// </summary>
+        public static string Target {
+            get {
+                return ResourceManager.GetString("Target", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Taxi History.
         /// </summary>
         public static string TaxiHistory {

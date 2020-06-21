@@ -414,4 +414,7 @@
   <data name="EndDate" xml:space="preserve">
     <value>Fecha de finalización</value>
   </data>
+  <data name="Target" xml:space="preserve">
+    <value>Destino:</value>
+  </data>
 </root>

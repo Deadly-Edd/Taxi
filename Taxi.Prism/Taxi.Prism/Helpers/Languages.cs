@@ -17,6 +17,8 @@ namespace Taxi.Prism.Helpers
 
         public static string MyTrip => Resource.MyTrip;
 
+        public static string Target => Resource.Target;
+
         public static string EndDate => Resource.EndDate;
 
         public static string MyTrips => Resource.MyTrips;
