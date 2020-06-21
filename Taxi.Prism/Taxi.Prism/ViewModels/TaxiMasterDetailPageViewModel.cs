@@ -97,6 +97,14 @@ namespace Taxi.Prism.ViewModels
                 },
                 new Menu
                 {
+                    Icon = "ic_location_on",
+                    PageName = "MyTripsPage",
+                    Title = Languages.MyTrips,
+                    IsLoginRequired = true
+                },
+
+                new Menu
+                {
                     Icon = "ic_people",
                     PageName = "GroupPage",
                      Title = Languages.AdminMyUserGroup
@@ -126,7 +134,8 @@ namespace Taxi.Prism.ViewModels
                 {
                     Icon = m.Icon,
                     PageName = m.PageName,
-                    Title = m.Title
+                    Title = m.Title,
+                    IsLoginRequired = m.IsLoginRequired
                 }).ToList());
         }
     }

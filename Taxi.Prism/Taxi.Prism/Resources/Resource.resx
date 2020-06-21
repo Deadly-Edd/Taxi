@@ -405,4 +405,10 @@
   <data name="No" xml:space="preserve">
     <value>No</value>
   </data>
+  <data name="MyTrip" xml:space="preserve">
+    <value>My Trip </value>
+  </data>
+  <data name="MyTrips" xml:space="preserve">
+    <value>My Trips </value>
+  </data>
 </root>
